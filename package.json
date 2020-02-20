@@ -1,33 +1,38 @@
 {
   "name": "junoui",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
     "start": "npx styleguidist server",
-    "build": "npx styleguidist build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "yarn rollup -c",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "dependencies": {
-    "add": "^2.0.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.4.0",
     "styled-components": "^5.0.1",
-    "styled-normalize": "^8.0.7",
-    "yarn": "^1.22.0"
+    "styled-normalize": "^8.0.7"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.4.3",
+    "babel-preset-react-app": "^9.1.1",
     "react-docgen-typescript": "^1.16.2",
     "react-styleguidist": "^10.6.2",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
     "typescript": "~3.7.2"
   },
   "eslintConfig": {

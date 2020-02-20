@@ -3,7 +3,7 @@
 
 ## 📦 Installation
 
-```
+```bash
 npm install junoui
 # Or using yarn
 yarn add junoui
