@@ -5,6 +5,7 @@ const Text = styled.span`
   font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   line-height: 1.45;
   letter-spacing: -0.35px;
+  color: rgba(0, 0, 0, 0.95);
 `;
 
 /**

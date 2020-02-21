@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "start": "npx styleguidist server",
-    "build": "yarn rollup -c",
+    "build": "yarn run build:lib && yarn run build:types",
+    "build:lib": "yarn rollup -c",
     "build:types": "tsc --emitDeclarationOnly"
   },
   "dependencies": {
@@ -31,6 +32,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
+    "ts-loader": "^6.2.1",
     "typescript": "~3.7.2",
     "webpack": "^4.41.6"
   },

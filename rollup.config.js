@@ -1,3 +1,7 @@
+import * as react from 'react';
+import * as reactDom from 'react-dom';
+import * as reactIs from 'react-is';
+
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
@@ -20,10 +24,9 @@ export default [
       commonjs({
         include: 'node_modules/**',
         namedExports: {
-          'node_modules/react-is/index.js': [
-            'isElement',
-            'isValidElementType',
-          ],
+          react: Object.keys(react),
+          'react-dom': Object.keys(reactDom),
+          'react-is': Object.keys(reactIs),
         },
       }),
       babel({
