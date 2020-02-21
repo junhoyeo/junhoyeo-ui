@@ -2,3 +2,18 @@
 그 뒤 JunoUI에서 권장하는 전역 스타일을 지정합니다.
 
 그렇기 때문에 `GlobalStyle`을 **리액트 트리의 최상단**에 위치시키는 것이 권장됩니다.
+
+### Usage
+
+```tsx
+const App: React.FC = () => (
+  <>
+    <GlobalStyle />
+    <AppContainer>
+      <Router />
+    </AppContainer>
+  </>
+);
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```

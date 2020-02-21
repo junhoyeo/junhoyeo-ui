@@ -1,4 +1,4 @@
-# 🍊 Junhoyeo UI
+# 🍊 @junhoyeo/ui
 Cool, Trendy and Typed UI Component Library for React.js
 
 [![npm version](https://img.shields.io/npm/v/@junhoyeo/ui.svg?style=flat-square)](https://www.npmjs.org/package/@junhoyeo/ui)
