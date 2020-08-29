@@ -15,3 +15,22 @@ npm install @junhoyeo/ui
 # Or using yarn
 yarn add @junhoyeo/ui
 ```
+
+## 🚀 Usage
+
+### One Import
+Say goodbye for *going back to the beginning of a file to add a new import every time you're going to use another component*!
+
+```tsx
+import JunoUI from '@junhoyeo/ui';
+
+export default () => (
+  <JunoUI.ServiceWrapper>
+    <JunoUI.Title>
+      Enables Consistent immersion
+    </JunoUI.Title>
+    <JunoUI.Input />
+    <JunoUI.Button />
+  </JunoUI.ServiceWrapper>
+);
+```
